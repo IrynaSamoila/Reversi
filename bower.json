@@ -1,0 +1,19 @@
+{
+  "name": "reversi",
+  "description": "Board game \"Reversi\"",
+  "main": "index.js",
+  "authors": [
+    "Iryna Samoila"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IrynaSamoila/Reversi",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "lodash": "^4.16.1"
+  }
+}

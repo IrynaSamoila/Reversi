@@ -1,0 +1,34 @@
+{
+  "name": "reversi",
+  "version": "1.0.0",
+  "description": "Board game \"Reversi\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrynaSamoila/Reversi.git"
+  },
+  "author": "Iryna Samoila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrynaSamoila/Reversi/issues"
+  },
+  "homepage": "https://github.com/IrynaSamoila/Reversi#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

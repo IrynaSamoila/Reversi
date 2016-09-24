@@ -1,0 +1,25 @@
+doctype html
+html(lang='en' ng-app='app' id='ng-app' )
+	head
+		meta(charset='utf-8')
+		link(href='css/reversi.min.css' rel='stylesheet')
+		link(href='css/libs.min.css' rel='stylesheet')
+		script(src='js/reversi.min.js')
+	body(ng-controller="GameController")
+		.page-head Игра Реверси
+		.result-container
+			.result(ng-if="gameOver")
+				| Победа &nbsp;
+				span.white-win(ng-if="whiteCount > blackCount") Белых
+				span.black-win(ng-if="blackCount > whiteCount") Черных
+				.result-text Фишек у белых: {{whiteCount}}
+				.result-text Фишек у черных: {{blackCount}}
+		.page-container
+			.page-center
+				.game-container
+					.lines(ng-repeat="line in board")
+						.field(ng-repeat="field in line", ng-click="setChip(field)")
+							div(ng-class="{'field-empty': field.state == 'empty', 'field-white': field.state == 'white', 'field-black': field.state == 'black'}")
+						.clear
+		.page-footer(ng-if="gameOver")
+			button.newGame(ng-click="startGame()") Новая Игра
